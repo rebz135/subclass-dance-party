@@ -1,10 +1,14 @@
 $(document).ready(function() {
   window.dancers = [];
-  // api key = VVEqW8XqU17C5W1o6Bl4yre9SlLGJ9hC
+  
+  // old apikey, rate limited exceeded while testing. Will try again tmr. 
+  // var apikey = VVEqW8XqU17C5W1o6Bl4yre9SlLGJ9hC
 
+  // new apikey, just to make sure everything went well before going to sleep
+  var apikey = "1FB9YdkFdXsboWlCYrHWXe0bw7AHWyxk"
   $('.giphysticker').on('click', function(event) {
 
-    $.ajax({url: "http://api.giphy.com/v1/stickers/random?api_key=VVEqW8XqU17C5W1o6Bl4yre9SlLGJ9hC", 
+    $.ajax({url: "http://api.giphy.com/v1/stickers/random?api_key=" + apikey, 
       success: function(result){
 
       var dancer = new RandomDancer(
@@ -22,7 +26,7 @@ $(document).ready(function() {
     var searchText = document.getElementById('searchtext').value
     console.log("searchtext",searchText);
 
-    $.ajax({url: "http://api.giphy.com/v1/gifs/random?api_key=VVEqW8XqU17C5W1o6Bl4yre9SlLGJ9hC&tag=" + searchText, 
+    $.ajax({url: "http://api.giphy.com/v1/gifs/random?api_key=" + apikey + "&tag=" + searchText, 
       success: function(result){
 
       var dancer = new RandomDancer(
@@ -42,7 +46,7 @@ $(document).ready(function() {
     // var promise = $.get("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=VVEqW8XqU17C5W1o6Bl4yre9SlLGJ9hC&limit=5");
     // a working test
     // http://api.giphy.com/v1/gifs/random?api_key=VVEqW8XqU17C5W1o6Bl4yre9SlLGJ9hC
-    $.ajax({url: "http://api.giphy.com/v1/gifs/random?api_key=VVEqW8XqU17C5W1o6Bl4yre9SlLGJ9hC&tag=dance", 
+    $.ajax({url: "http://api.giphy.com/v1/gifs/random?api_key=" + apikey + "&tag=dance", 
       success: function(result){
     
 
