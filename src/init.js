@@ -60,18 +60,12 @@ $(document).ready(function() {
   
     }});
   
-  
-  
-  
-  
   });
  
   
   $('.addDancerButton').on('click', function(event) {
   
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
-    console.log(dancerMakerFunctionName);
-    console.log(window[dancerMakerFunctionName]);
     // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
@@ -83,6 +77,22 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+    
+    // $('.dancer').on('mouseover', function(event) {
+    //   $(event.target).css({"border": "10px solid yellow"})
+    // });
+    $('.dancer').hover(function() {
+      $(this).fadeOut( 100 );
+      $(this).fadeIn( 500 );
+      $(this).css({"border": "20px solid yellow"})},
+      function(){
+        $(this).css({"border": "10px solid blue"})
+      });
   });
+  
+  $('.lineup').on('click', function(event) {
+    $('.dancer-blue, .dancer').css({"top": "50%"})
+  });
+  
 });
 
