@@ -1,3 +1,5 @@
+// blinky
+
 var BlinkyDancer = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
   this.step = this.step.bind(this);
@@ -13,6 +15,8 @@ BlinkyDancer.prototype.step = function() {
   oldStep();
   this.$node.toggle();
 };
+
+// blink blue 
 
 var BlinkyDancerBlue = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
@@ -39,4 +43,6 @@ BlinkyDancerBlue.prototype.setPosition = function(top, left) {
   };
   this.$node.css(styleSettings);
 };
+
+
 

@@ -33,8 +33,8 @@ body, a:link, a:visited, a:active{
 }
 
 .dancer-random{
-  background-image:;
-  border:10px solid green;
+  /*background-image:;*/
+/*  border:10px solid green;*/
   border-radius:10px;
   position:absolute;
 }
