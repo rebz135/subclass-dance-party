@@ -1,7 +1,6 @@
 var RandomDancer = function(top, left, timeBetweenSteps, data) {
-  this.image = data;
-  Dancer.call(this, top, left, timeBetweenSteps);
-  console.log("data",this.image.images.original)
+  this.image = data.images.original
+  console.log("imagetest",this.image)
   this.$node = $('<span class="dancer-random"></span>');
   this.setPosition(top, left);
   this.step = this.step.bind(this);
@@ -22,9 +21,9 @@ RandomDancer.prototype.setPosition = function(top, left) {
   var styleSettings = {
     top: top,
     left: left,
-    width: this.image.images.original.width,
-    height: this.image.images.original.height,
-    'background-image': "url("+ this.image.images.original.url +")"
+    width: this.image.width,
+    height: this.image.height,
+    'background-image': "url("+ this.image.url +")"
   };
   this.$node.css(styleSettings);
 };
