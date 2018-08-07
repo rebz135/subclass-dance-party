@@ -17,6 +17,15 @@ describe('blinkyDancer', function() {
     blinkyDancer.step();
     expect(blinkyDancer.$node.toggle.called).to.be.true;
   });
+  
+  it('should delegate to parent prototype properties if not found in blinkyDancer', function() {
+    expect(typeof blinkyDancer.setPosition).to.equal('function');
+  });
+  
+  it('dancer and dancer red should be classes of blinkyDancers', function() { 
+    expect(blinkyDancer.$node[0].classList[0]).to.equal('dancer');
+    expect(blinkyDancer.$node[0].classList[1]).to.equal('dancer-red');
+  });
 
   describe('dance', function() {
     it('should call step at least once per second', function() {
