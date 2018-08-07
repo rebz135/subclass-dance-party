@@ -2,8 +2,8 @@ body, html{
   height:100%;
 }
 body{
+  background-image: url('./images/pool.jpg');
   margin: 0px;
-  background-color:#444;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -22,6 +22,19 @@ body, a:link, a:visited, a:active{
 }
 .dancer{
   border:10px solid red;
+  border-radius:10px;
+  position:absolute;
+}
+.dancer-blue{
+  background-image:;
+  border:10px solid blue;
+  border-radius:10px;
+  position:absolute;
+}
+
+.dancer-random{
+  background-image:;
+  border:10px solid green;
   border-radius:10px;
   position:absolute;
 }
