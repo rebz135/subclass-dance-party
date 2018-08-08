@@ -1,5 +1,7 @@
 var RandomDancer = function(top, left, timeBetweenSteps, data) {
-  this.image = data.images.original
+  console.log("data", data);
+  this.image = data.images.original;
+  console.log("image", this.image)
   this.$node = $('<span class="dancer dancer-random"></span>');
   this.setPosition(top, left);
 };

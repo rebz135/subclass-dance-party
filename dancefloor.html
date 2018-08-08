@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Object Dance Party</title>
+    <title>Pool Dance Party</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="lib/jquery.js"></script>
@@ -11,15 +11,16 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <span class="title">Pool dance party</span>
-      <div class="navbar-nav">
-        <a href="#" class="nav-item nav-link addDancerButton" data-dancer-maker-function-name="BlinkyDancer">Add Poly!</a>
-        <a href="#" class="nav-item nav-link addDancerButton" data-dancer-maker-function-name="BlinkyDancerBlue">Add Cosmic Bear!</a>
-        <a href="#" class="nav-item nav-link giphybutton" data-dancer-maker-function-name="RandomDancer">Random Dancing Gif</a>
-        <input id="searchtext" class="form-control mr-sm-2" type="search" placeholder="Mickey Mouse" value="Mickey Mouse">
-        <a href="#" class="nav-item nav-link giphysearchbutton" data-dancer-maker-function-name="RandomSearchedDancer">Add a random gif with a tag</a>    
-        <a href="#" class="nav-item nav-link giphysticker" data-dancer-maker-function-name="RandomSticker">Giphy sticker</a>  
-        <a href="#" class="nav-item nav-link lineup" data-dancer-maker-function-name="lineup">Line 'em up!</a> 
+    <div class="navbar-nav container-fluid">
+      <a class="navbar-brand" href="#">Pool Party Dance!</a>
+       <button type="button" class="btn btn-primary addDancerButton" data-dancer-maker-function-name="BlinkyDancer">Add Poly!</button>
+       <button type="button" class="btn btn-primary mx-1 addDancerButton" data-dancer-maker-function-name="BlinkyDancerBlue">Add Cosmic Bear!</button>  
+       <button type="button" class="btn btn-primary mx-1 addDancerButton giphybutton" data-dancer-maker-function-name="RandomDancer">Add Random Dancing Gif!</button> 
+      <input id="searchtext" class="form-control mr-sm-2 ml-5" type="search" placeholder="Mickey Mouse" value="Mickey Mouse">
+      <button type="button" class="btn btn-primary mx-1 addDancerButton giphysearchbutton" data-dancer-maker-function-name="RandomSearchedDancer">Add a random gif with a tag</button>
+      <input id="searchtextsticker" class="form-control mr-sm-2 ml-5" type="search" placeholder="Music" value="Music">
+      <button type="button" class="btn btn-primary mx-1 giphysticker" data-dancer-maker-function-name="RandomSticker">Add a Giphy sticker!</button>  
+      <button type="button" class="btn btn-primary mx-1 lineup" data-dancer-maker-function-name="lineup">Line 'em up!</button>
       </div>
     </nav>
     <script src="src/init.js"></script>
