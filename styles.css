@@ -20,21 +20,24 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
+
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
   position:absolute;
+  background-size:     cover;                    
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
+.dancer-red{
+  height: 160px;
+  width: 120px;
+  background-image: url('./images/polarbear.gif')
 }
 .dancer-blue{
-  background-image:;
-  border:10px solid blue;
-  border-radius:10px;
-  position:absolute;
+  width: 180px;
+  height: 273px;
+  background-image: url('./images/bear.gif')
 }
 
 .dancer-random{
-  /*background-image:;*/
-/*  border:10px solid green;*/
-  border-radius:10px;
   position:absolute;
 }

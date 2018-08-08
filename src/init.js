@@ -74,9 +74,6 @@ $(document).ready(function() {
     );
     $('body').append(dancer.$node);
     
-    // $('.dancer').on('mouseover', function(event) {
-    //   $(event.target).css({"border": "10px solid yellow"})
-    // });
     $('.dancer').hover(function() {
       $(this).fadeOut( 100 );
       $(this).fadeIn( 500 );
